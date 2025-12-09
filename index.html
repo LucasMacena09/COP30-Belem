@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COP30 - Conferência do Clima</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>COP30 <span class="highlight">Belém</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#palestrantes">Palestrantes</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#cadastro" class="btn-nav">Cadastros</a></li>
+                </ul>
+                
+                <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">
+                    🌓
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>O Futuro do Clima é Agora</h2>
+                <p>A COP30 (30ª Conferência das Partes) será um marco histórico na luta contra as mudanças climáticas, realizada no coração da Amazônia.</p>
+                <a href="#agenda" class="btn-primary">Ver Programação</a>
+            </div>
+        </section>
+
+        <section id="agenda" class="content-section">
+            <div class="container">
+                <h3>Agenda e Sessões</h3>
+                <div id="agenda-grid" class="grid-container">
+                    </div>
+            </div>
+        </section>
+
+        <section id="palestrantes" class="content-section alt-bg">
+            <div class="container">
+                <h3>Palestrantes Destaque</h3>
+                <div class="grid-container">
+                    <article class="card">
+                        <div class="card-content">
+                            <h4>Dra. Marina Silva (Fictício)</h4>
+                            <p>Especialista em políticas ambientais.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h4>Carlos Nobre (Fictício)</h4>
+                            <p>Cientista renomado sobre a Amazônia.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="content-section">
+            <div class="container">
+                <h3>Recursos Educacionais</h3>
+                <ul class="resource-list">
+                    <li><a href="https://www.ipcc.ch/" target="_blank">Relatórios do IPCC</a></li>
+                    <li><a href="https://unfccc.int/" target="_blank">UN Climate Change</a></li>
+                    <li><a href="https://www.gov.br/mma/pt-br" target="_blank">Ministério do Meio Ambiente</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cadastro" class="content-section alt-bg">
+            <div class="container">
+                <h3>Inscreva-se para Novidades</h3>
+                <form id="registroForm">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uf">UF (Estado):</label>
+                        <select id="uf" name="uf" required>
+                            <option value="">Selecione...</option>
+                            <option value="PA">Pará</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="OUTRO">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Área de Interesse:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interesse" value="florestas"> Florestas</label>
+                            <label><input type="checkbox" name="interesse" value="energia"> Energia Renovável</label>
+                            <label><input type="checkbox" name="interesse" value="politica"> Política</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" id="lgpd" required>
+                            Aceito os termos da LGPD e o uso dos meus dados.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Enviar Cadastro</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Projeto COP30 - Desenvolvido para fins educacionais.</p>
+        </div>
+    </footer>
+
+    <div id="modalSessao" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle">Título da Sessão</h2>
+            <p id="modalDesc">Descrição detalhada...</p>
+            <p><strong>Horário:</strong> <span id="modalTime">--:--</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
