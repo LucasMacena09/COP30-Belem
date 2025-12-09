@@ -24,25 +24,3 @@ O projeto é dividido nos três arquivos essenciais:
 | `index.html` | Estrutura principal da página, conteúdo estático, esqueletos de Modal e Formulário, e o botão de tema. |
 | `styles.css` | Estilos responsivos, variáveis de cor (`--primary-color`, `body.dark-theme`), Flexbox/Grid e estilos para o botão de tema. |
 | `script.js` | Lógica de interatividade: renderização da Agenda (simulação JSON), controle do Modal, validação do Formulário e funções de alternância/persistência do Tema. |
-
------
-
-## Como Executar Localmente
-
-1.  **Clone o Repositório:**
-    ```bash
-    git clone [LINK_DO_SEU_REPOSITORIO]
-    cd cop30-site
-    ```
-2.  **Abra o Arquivo:**
-    Abra o arquivo `index.html` diretamente no seu navegador de preferência para visualizar o site.
-
-
-## Deploy (GitHub Pages)
-
-O projeto foi configurado para ser facilmente implantado no GitHub Pages.
-
-1.  Vá para **Settings** do seu repositório.
-2.  Clique em **Pages** no menu lateral.
-3.  Em **Branch**, selecione `main` (ou `master`) e clique em **Save**.
-4.  O site estará acessível no link fornecido pelo GitHub Pages em poucos minutos.
